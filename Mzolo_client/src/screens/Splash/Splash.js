@@ -4,7 +4,12 @@ import HawkLogo from '../../../assets/images/hawk_watch_logo.png';
 import DarkLogo from '../../../assets/images/dark_mode.png';
 import LightLogo from '../../../assets/images/light_mode.png';
 
-const Splash = () => {
+const Splash = ({navigation}) => {
+
+  setTimeout(() => {
+    navigation.navigate('Login');
+  }, 2000);
+
   return (
     <SafeAreaView style={[styles.root]}>
     <View style = {styles.spacer} />
